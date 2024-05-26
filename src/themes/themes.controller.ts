@@ -17,7 +17,7 @@ export class ThemesController {
     description:
       '검색조건에 맞추어 검색한 테마를 정렬조건에 맞추어 정렬하여 반환',
   })
-  getHello(): Promise<Theme[]> {
+  getThemes(): Promise<Theme[]> {
     return this.themesService.searchThemes();
   }
 }
