@@ -46,16 +46,19 @@ export class Theme {
   @Column({ nullable: true })
   max_playable_member_count: number;
 
-  @Column({ nullable: true })
+  @Column({ type: 'decimal', precision: 3, scale: 2, nullable: true })
   recommendation_score: number;
 
   @Column('int', { nullable: true, array: true })
   recommending_member_count: number[];
 
-  @Column({ nullable: true })
+  @Column({ type: 'decimal', precision: 3, scale: 2, nullable: true })
   difficulty_score: number;
 
   @Column({
+    type: 'decimal',
+    precision: 3,
+    scale: 2,
     nullable: true,
     comment: `조도/공포도
 - 밝음: 1
