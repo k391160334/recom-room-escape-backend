@@ -22,7 +22,6 @@ import { ThemesModule } from './themes/themes.module';
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_DATABASE'),
         autoLoadEntities: true,
-        synchronize: true,
         logging: true,
       }), // TODO : config 별도 파일로 분리
     }),
