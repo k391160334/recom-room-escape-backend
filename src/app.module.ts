@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { ThemesModule } from './themes/themes.module';
+import { CafeLocationsModule } from './cafeLocations/cafeLocations.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { ThemesModule } from './themes/themes.module';
       }), // TODO : config 별도 파일로 분리
     }),
     ThemesModule,
+    CafeLocationsModule,
   ],
 })
 export class AppModule {
