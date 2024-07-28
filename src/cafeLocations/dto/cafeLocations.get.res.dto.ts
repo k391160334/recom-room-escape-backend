@@ -1,8 +1,5 @@
 // TODO: swagger 설정
-export class GetCafeLocationsResponseDto {
-  id: number;
-
-  depth1: string;
-
-  depth2: string;
-}
+export type GetCafeLocationsResponseDto = {
+  name: string;
+  children: { name: string; id: number }[];
+}[];

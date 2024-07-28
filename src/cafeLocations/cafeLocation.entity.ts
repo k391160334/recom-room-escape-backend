@@ -10,4 +10,10 @@ export class CafeLocation {
 
   @Column({ length: 10 })
   depth2: string;
+
+  @Column()
+  depth1_priority: number;
+
+  @Column()
+  depth2_priority: number;
 }

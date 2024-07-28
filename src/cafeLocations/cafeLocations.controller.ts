@@ -16,7 +16,7 @@ export class CafeLocationsController {
   @ApiCreatedResponse({
     description: '모든 지역 목록 반환',
   })
-  getCafeLocations(): Promise<GetCafeLocationsResponseDto[]> {
+  getCafeLocations(): Promise<GetCafeLocationsResponseDto> {
     return this.cafeLocationsService.getCafeLocations();
   }
 }
